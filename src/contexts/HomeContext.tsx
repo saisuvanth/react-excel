@@ -9,6 +9,7 @@ type HomeContextProviderProps = {
 
 
 const HomeContextProvider = ({ children }: HomeContextProviderProps) => {
+	// eslint-disable-next-line @typescript-eslint/no-unused-vars
 	const [data, setData] = useState<ITable>({ x_ord: 26, y_ord: 30 });
 
 	return (

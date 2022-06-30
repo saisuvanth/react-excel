@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useRef, useState } from 'react';
 import './App.css';
 import Table from './components/Table';
 import HomeContextProvider from './contexts/HomeContext';
@@ -10,11 +10,7 @@ function App() {
   const [csvData, setCsvData] = useState([]);
   const [loading, setLoading] = useState(false);
 
-  // useEffect(() => {
-  //   console.log(csvData)
-  //   if (csvData.length)
-  //     csvRef.current.link.click();
-  // }, [csvData])
+
 
   const handleClick = (event: any) => {
     setLoading(true);

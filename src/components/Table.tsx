@@ -1,6 +1,6 @@
 import React, { Dispatch, FC, useCallback, useContext, useState } from 'react'
 import { HomeContext } from '../contexts/HomeContext';
-import type { IData, ITable } from '../types';
+import type { ITable } from '../types';
 import Row from './Row';
 
 interface TableProps {
@@ -9,7 +9,7 @@ interface TableProps {
 }
 
 const Table: FC<TableProps> = ({ data, setData }) => {
-	const { x_ord, y_ord } = useContext(HomeContext);
+	const { y_ord } = useContext(HomeContext);
 	// const [data, setData] = useState([]);
 	const [, updateState] = useState<{}>();
 	const forceUpdate = useCallback(() => updateState({}), []);
