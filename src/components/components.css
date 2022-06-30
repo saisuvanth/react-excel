@@ -1,0 +1,37 @@
+.cell {
+	width: 80px;
+	padding: 4px;
+	margin: 0;
+	height: 25px;
+	box-sizing: border-box;
+	position: relative;
+	display: inline-block;
+	color: black;
+	border: 1px solid #cacaca;
+	text-align: left;
+	vertical-align: top;
+	font-size: 14px;
+	line-height: 15px;
+	overflow: hidden;
+	font-family: Calibri, Segoe UI, Thonburi, Arial, Verdana, sans-serif;
+}
+
+.index {
+	background-color: rgb(176, 176, 176);
+}
+
+.index_x {
+	background-color: rgb(176, 176, 176);
+	width: 30px;
+}
+
+.active,
+.passive {
+	outline-color: lightblue;
+	background-color: yellow;
+	outline-style: dotted;
+}
+
+.passive {
+	background-color: white;
+}
